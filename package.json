@@ -1,6 +1,6 @@
 {
   "name": "hirain-metamodel-table",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "经纬恒润元模型平台前端表格组件",
   "scripts": {
     "update": "npm install --legacy-peer-deps",
