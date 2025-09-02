@@ -3084,6 +3084,7 @@ export default defineComponent({
 
       // 全量数据
       internalData.tableFullData = fullData
+      internalData.afterTreeFullData = fullData.slice()
       if (isReset) {
         internalData.isResizeCellHeight = false
       }
@@ -3222,6 +3223,7 @@ export default defineComponent({
 
       // 全量数据
       internalData.tableFullData = fullData
+      internalData.afterTreeFullData = fullData.slice()
       if (isReset) {
         internalData.isResizeCellHeight = false
       }
@@ -7484,6 +7486,7 @@ export default defineComponent({
         if (force) {
           // 更新数据，处理筛选和排序
           // updateAfterFullData()
+
           // 如果为虚拟树，将树结构拍平
           fullList = handleVirtualTreeToList()
         }
