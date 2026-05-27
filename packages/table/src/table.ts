@@ -1664,6 +1664,7 @@ export default defineComponent({
             rowRest.items = XEUtils.get(parentRowRest.row, `${treeOpts.childrenField}`, [])
           }
         }
+        if (isFilter.value && !parentRowRest && !rowRest?.row?._isFilter) return // 根节点过滤
         expandMaps[rowid] = 1
         fullData.push(row)
         let index = 0
