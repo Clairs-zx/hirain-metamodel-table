@@ -4073,9 +4073,9 @@ export default defineComponent({
         })
       },
       loadData (datas, filter) {
-        const isFilter = filter || false
+        isFilter.value = filter || false
         const { initStatus } = internalData
-        return loadTableData(datas, false, isFilter).then(() => {
+        return loadTableData(datas, false, isFilter.value).then(() => {
           internalData.inited = true
           internalData.initStatus = true
           if (!initStatus) {
